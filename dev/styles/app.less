@@ -1,0 +1,75 @@
+@import "components/header";
+@import "components/request";
+@import "components/info";
+@import "components/products";
+@import "components/company";
+@import "components/top_product";
+@import "components/contacts";
+@import "components/social";
+@import "components/menu";
+@import "components/footer";
+@import "components/fonts";
+
+@backColor: #8c8c8c;
+
+html {
+  font-family: 'Lucida';
+}
+
+section {
+  display: block;
+  position: relative;
+}
+
+.gray{
+  background-color: @backColor;
+}
+
+.ui.smoothscroll .header {
+  margin:25px;
+}
+
+.topic {
+  text-align: center;
+  font-size: 36px;
+  font-variant: small-caps;
+  line-height: 3em;
+  background-color: white;
+  width: 23%;
+  min-width: 230px;
+  margin: 35px auto;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top:52px;
+    left: 0;
+    border-top: 3px solid gray;
+    width: 100%;
+  }
+}
+
+/*body {
+  overflow-y:hidden;
+}*/
+
+.main_content{
+  position:relative;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float:right;
+}
+
+.text_center {
+  text-align: center;
+} 
+
+.docker {
+  font-family: 'Docker';
+}

@@ -1,0 +1,60 @@
+@import "components/header";
+@import "components/request";
+@import "components/social";
+@import "components/menu";
+@import "components/footer";
+@import "components/fonts";
+
+@import "components/price";
+
+@backColor: #8c8c8c;
+
+html {
+  font-family: 'Lucida';
+}
+
+section {
+  display: block;
+  position: relative;
+}
+
+.topic {
+  text-align: center;
+  font-size: 36px;
+  font-variant: small-caps;
+  line-height: 3em;
+  background-color: white;
+  width: 23%;
+  min-width: 230px;
+  margin: 35px auto;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top:52px;
+    left: 0;
+    border-top: 3px solid gray;
+    width: 100%;
+  }
+}
+
+.gray{
+  background-color: @backColor;
+}
+
+.docker {
+  font-family: 'Docker';
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float:right;
+}
+
+.text_center {
+  text-align: center;
+} 

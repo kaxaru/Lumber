@@ -1,0 +1,90 @@
+@foo__gray: #313030;
+
+.footer {
+  //background: url('../../images/back.png');
+  background-repeat: none;
+  background-size: cover;
+  min-height: 200px;
+  width: 100%; 
+  text-align: left;
+  padding-top: 40px;
+  font-size: 16px;
+
+  &__header {
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 28px;
+  }
+
+  .social a:hover {
+    background-color: white;
+    border: 1px solid @foo__gray;
+  }
+
+  .social a path {
+    fill: white;
+  }
+  .social a:hover path {
+    fill:black;
+  }
+
+  .social a div {
+    position:relative;
+  }
+
+  div.phone {
+    position: relative;
+    margin-left: 40px;
+  }
+
+  div.phone:before {
+    content: '\f2a0';
+    position: absolute;
+    top: 30%;
+    left: -40px;
+    height: inherit;
+    width: inherit;
+    font-family: Icons;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 3em;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    color: @foo__gray;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  p span {
+    margin: 2px;
+    letter-spacing: 1.4px;
+    color: @foo__gray;
+  }
+
+  p span:last-child {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    text-align: center;
+  }
+
+  .phone {
+    width: 300px;
+    margin: 0 auto !important;
+
+    &:before {
+      left: -120px !important;
+    }
+  }
+}

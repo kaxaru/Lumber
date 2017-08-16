@@ -1,0 +1,121 @@
+.social a {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display:inline-block;
+  margin-right: 20px;
+  margin-top:  20px;
+  transition: all .75s ease-in-out;
+}
+
+.social_vidget {
+  position: relative;
+  width: 50%;
+  margin: 20px auto;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    border: 1px solid gray;
+    width:100%;
+    padding: 10px;
+    z-index:-1;
+  }
+
+  &:before {
+    top: -20px;
+    left: -20px;
+    width:100%;
+    height: calc(100% + 25px);
+    opacity: .5;
+  }
+
+  &:after {
+    top: -10px;
+    left: -35px;
+    width: calc(100% + 4.5em);
+    height: 108%;
+  }
+
+  &__header {
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-style: italic;
+    padding: 10px;
+    padding-left: 33%;
+
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 33%;
+      width: 100px;
+      height: 100%;
+      border-bottom: 2px solid black;
+    }
+  }
+
+  .social {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .social a:hover {
+    background-color:black;
+  }
+
+  .social a path {
+    fill: #8c8c8c;
+  }
+
+  .social a:hover path {
+    fill: white;
+  }
+
+  &__border {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #929292;
+    margin-right: 20px;
+  }
+}
+
+.social_icon {
+  position: absolute;
+  background-size:cover;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  top: 2px;
+  left: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  .social_vidget {
+    width:60%;
+    text-align: center;
+    &:before {
+      min-width:270px;
+    }
+
+    &:after{
+      min-width:300px;
+    }
+    &__header {
+      padding:0;
+
+      &:after {
+        top:10px;
+        left: 20%;
+      }
+    }
+    .social {
+      width: 250px;
+      margin-bottom: 2em;
+    }
+  }
+}

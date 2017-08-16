@@ -1,0 +1,30 @@
+.products {
+  &__content .topic.docker {
+    line-height: 1.2em;
+    font-size: 24px;
+  }
+  &__content .cards {
+    justify-content: center;
+    .card {
+      overflow: hidden;
+    }
+
+    .card .image{
+      transition: all .5s ease-in-out;
+    }
+
+    img {
+      height: 150px !important;
+    }
+
+    .card .image:hover {
+      transform: scale(1.1, 1.1)
+    } 
+  } 
+
+  .cards {
+    .header {
+      height: auto;
+    }
+  }
+}

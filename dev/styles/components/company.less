@@ -1,0 +1,47 @@
+.company {
+  .ui.grid .column{
+    text-align: center;
+  }
+  &__achievment {
+    position:relative;
+    background-image: url('../../images/firewood.jpg');
+    background-attachment: fixed;
+    .wrapper {
+      width: 250px;
+      height: 250px;
+      margin: 0 auto;
+      border-radius:50%;
+      border: 2px solid white;
+      padding-top: 60px;
+    }
+    .number {
+      color: red;
+      font-size: 72px;
+      font-variant: small-caps;
+      //float:left;
+      margin: 30px;
+    }
+
+    .text {
+      font-family: 'Docker';
+      font-size: 36px;
+      font-variant: small-caps;
+      word-wrap: break-word;
+      line-height: 24px;
+      white-space: pre-wrap;
+      color:white;
+
+    }
+  }
+
+  &__achievment:after {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: #8c7d7d;
+    opacity: .3;
+  }
+}

@@ -1,0 +1,118 @@
+.header {
+  position: relative;
+  height: 7em;
+
+  &:after {
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid gray;
+  }
+
+  &__logo {
+    width: 15em;
+    float: left;
+
+    g {
+      transform: scale(0.25)
+    }
+  }
+  &__phone {
+    position: relative;
+    float:right;
+    margin-right: 25px;
+    i {
+      position: absolute;
+      left: -40px;
+    }
+
+    p {
+      line-height: 0.4285em;
+      span {
+        //float: left;
+        padding:3px;
+      }
+
+      p:first-child {
+        font-weight:600;
+        font-size: 12px;
+        line-height: 2.5em;
+      }
+
+      span:last-child{
+        position: relative;
+        font-size: 28px;
+        font-weight: 600
+      }
+
+      .mts:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: -35px;
+        top: 0;
+        width: 30px;
+        height:30px;
+        background-image: url('../../images/mts.jpg');
+        background-size: cover;
+      }
+
+      /*.mts {
+        background-image: url('../../images/mts.jpg');
+      }*/
+
+      /*.velcome {
+        background-image: url('../../images/velcome.jpg');
+      }*/
+
+      .code {
+        color: red;
+      }
+    }   
+  }
+
+  &__slogan {
+    float:left;
+    width: 300px;
+    margin-left: 3em;
+  }
+}
+
+.slogan {
+   font-family: 'Docker';
+   font-size: 30px;
+   font-weight: 600;
+   line-height: 1.2em;
+   text-align: center;
+   font-variant: small-caps;
+}
+
+@media screen and (min-width: 450px) and(max-width: 1000px) {
+  .header {
+    &__slogan {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    &__slogan {
+      display: none;
+    }
+
+    &__logo {
+      display:none;
+    }
+
+    &__phone {
+      float:none;
+      width:250px;
+      margin: 0 auto;
+    }
+  }
+}

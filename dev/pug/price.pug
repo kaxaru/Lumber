@@ -1,0 +1,71 @@
+extends base
+block link
+  link(rel='stylesheet' href='/dist/price.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css')
+block title
+  | Пиломатериалы в Гомеле
+block main
+  section.ui.price
+    .topic.docker Наш прайс
+    .ui.grid.container
+      .ten.wide.column
+        table.ui.celled.table.price__table
+          thead
+            tr
+              th Название
+              th Стоимость
+          tbody
+            tr
+              td.table_header(colspan='2') Брус
+            tr
+              td
+                .ui.ribbon.label 40*130 мм сухой 
+              td 420,5 руб/м3
+            tr
+              td 40*130 мм сухой 
+              td 420,5 руб/м3
+            tr
+                td.table_header(colspan='2') Доска
+            tr
+              td 40*130 мм сухой 
+              td 420,5 руб/м3
+            tr
+                td.table_header(colspan='2') Доска
+            tr
+              td 40*130 мм сухой 
+              td 420,5 руб/м3
+            tr
+                td.table_header(colspan='2') Доска
+            tr
+              td 40*130 мм сухой 
+              td 420,5 руб/м3
+            tr
+                td.table_header(colspan='2') Доска
+            tr
+              td 40*130 мм сухой 
+              td 420,5 руб/м3
+          tfoot
+              tr
+                th(colspan='3')
+        .ui.button.upload.inverted.red скачать
+      .six.wide.column
+        .calculator 
+          span Калькулятор
+          .ui.floating.dropdown.labeled.search.icon.button.green
+            i.align.justify.icon
+            span.text Выбрать категорию
+            .menu.transition.hidden
+              .item Доска
+              .item Брус
+          .ui.floating.dropdown.labeled.search.icon.button.green
+            i.tree.icon
+            span.text Выбрать материал
+            .menu.transition.hidden
+              .item Дуб
+              .item Сосна
+          .ui.input
+            input(type="text" placeholder='количество')
+          .ui.button.inverted.red Рассчитать
+block scripts
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/components/dropdown.min.js')
+  script(src='/dist/price.js')

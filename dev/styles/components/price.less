@@ -1,0 +1,65 @@
+.ui.header:first-child {
+  margin-top: 50px !important;
+}
+
+.price {
+  margin-top: -100px;
+
+  .grid.container {
+    margin-bottom: 50px;
+  }
+
+  &__table td, &__table th {
+    text-align: center !important;
+  }
+
+  &__table .ribbon {
+    width: 100%;
+  }
+
+  &__table .table_header {
+    font-size: 16px;
+    font-weight: 600;
+    font-variant: petite-caps;
+    text-indent: 50px;
+  }
+
+  .ui.table td>.ui.ribbon.label {
+    left: calc(-.78571429em - 1.8em);
+    padding: 10px;
+    color: white;
+    background-color: #ff5959;
+    font-size: 14px;
+    &:after {
+      background-color: inherit !important;
+      border-color: initial;
+      border-right-color: inherit;
+    }
+  }
+
+  .calculator {
+    text-align: center;
+
+    span {
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      font-variant: petite-caps;
+    }
+
+    &>span{
+      margin: 30px auto;
+    }
+
+    &>div {
+      margin:15px;
+    }
+  }
+
+  .upload {
+    display: block !important;
+    width: 133px;
+    margin: 30px auto !important;
+    margin-bottom: 0 !important;
+  }
+}
