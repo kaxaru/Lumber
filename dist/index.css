@@ -290,7 +290,7 @@
 }
 .company__achievment {
   position: relative;
-  background-image: url(/dist/images/firewood.jpg);
+  background-image: url(./dist/images/firewood.jpg);
   background-attachment: fixed;
 }
 .company__achievment .wrapper {
